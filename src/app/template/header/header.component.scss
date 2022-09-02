@@ -1,0 +1,181 @@
+.main {
+  width: 100%;
+  height: 80px;
+  background-color: #0A192F;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 99;
+  //position: absolute;
+
+}
+
+.btn-section {
+  width: 500px;
+  //background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+
+  .btn-resume {
+    color: #56DBBF;
+    border: 1px solid white;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    background: linear-gradient(to right, #8892B0 50%, #0A192F 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    &:hover {
+      color: white;
+      font-weight: 600;
+      background-color: #0c222f;
+      background-position: left bottom;
+    }
+  }
+  .btn-route {
+    color: #56DBBF;
+    border: none;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    &:hover {
+      color: #779c9b;
+    }
+  }
+
+}
+
+.logo-section {
+  width: 100px;
+  //background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .img {
+    width: 50px;
+  }
+}
+
+.btn-section-mobile {
+  //display: none;
+  width: 60px;
+  //background-color: red;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  .btn-menu {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+  .img-menu {
+    display: flex;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+//-> mobile response <-
+
+@media only screen and (max-width: 650px) {
+  .btn-section {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .btn-section-mobile {
+    display: none;
+  }
+}
+
+
+.menu {
+  background-color: yellow;
+  width: 0px;
+  height: 100%!important;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  //display: none;
+}
+
+
+
+
+
+.example-sidenav {
+  //padding: 20px;
+  z-index: 99;
+  position: absolute;
+  width: 100%!important;
+  height: 100%!important;
+  bottom: 0;
+  //background-color: blue;
+  text-align: center;
+  transition-duration: 0.5s;
+
+  .example-sidenav-box {
+    width: 100%!important;
+    height: 100vh!important;
+
+      background: -moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+      /* safari 5.1+,chrome 10+ */
+      background: -webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+      /* opera 11.10+ */
+      background: -o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+      /* ie 10+ */
+      background: -ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+      /* global 92%+ browsers support */
+      background: radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: testing;
+    .btn-route {
+      color: #56DBBF;
+      border: none;
+      font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+      margin: 15px;
+      &:hover {
+        color: #779c9b;
+      }
+    }
+    .btn-resume {
+      color: #56DBBF;
+      border: 1px solid white;
+      font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+      background-color: #0c222f;
+      margin: 15px;
+      &:hover {
+        color: white;
+        font-weight: 600;
+        background-color: #8892B0;
+
+      }
+    }
+
+    .btn-close-menu{
+      margin-top: 50px;
+      width: 70px;
+      &:hover {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 50%;
+      }
+
+    }
+  }
+}
+

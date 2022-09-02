@@ -1,0 +1,78 @@
+<!--<mat-drawer-container class="example-container" autosize>-->
+  <!--<mat-drawer #drawer class="example-sidenav" mode="side">-->
+    <!--<p>Auto-resizing sidenav</p>-->
+    <!--<p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>-->
+
+  <!--</mat-drawer>-->
+
+  <!--<div class="example-sidenav-content">-->
+    <!--<button type="button" mat-button >-->
+      <!--Toggle sidenav-->
+    <!--</button>-->
+  <!--</div>-->
+
+
+
+
+<!--</mat-drawer-container>-->
+
+
+<div class="main">
+  <mat-drawer #drawer class="example-sidenav" mode="over">
+    <div class="example-sidenav-box">
+      <button type="button" mat-button class="btn-route">
+        01. Home
+      </button>
+      <button type="button" mat-button class=" btn-route">
+        02. Works
+      </button>
+      <button type="button" mat-button class=" btn-route">
+        03. Blog
+      </button>
+      <button type="button" mat-button class=" btn-resume">
+        Resume
+      </button>
+
+      <img src="../../../assets/images/icons/close.png" class="btn-close-menu" (click)="drawer.toggle()" alt="">
+
+      <!--<button mat-button class="btn-close" (click)="drawer.toggle()">close</button>-->
+
+    </div>
+    <!--<p>Auto-resizing sidenav wdqfwefkewn</p>-->
+    <!--<p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>-->
+
+  </mat-drawer>
+  <div class="logo-section">
+    <img src="../../../assets/images/logos/logo.png" class="img">
+  </div>
+
+  <div class="btn-section">
+    <button type="button" mat-button class="btn-route">
+      01. Home
+    </button>
+    <button type="button" mat-button class=" btn-route">
+      02. Works
+    </button>
+    <button type="button" mat-button class=" btn-route">
+      03. Blog
+    </button>
+    <button type="button" mat-button class=" btn-resume">
+      Resume
+    </button>
+
+  </div>
+
+  <div class="btn-section-mobile">
+    <button type="button" class="btn btn-menu" >
+      <!--<a (click)="drawer.toggle()">click</a>-->
+      <img src="../../../assets/images/icons/menu.svg" class="img-menu" (click)="drawer.toggle()">
+    </button>
+    <!--<app-sidemenu *ngIf="loadSidemenu"></app-sidemenu>-->
+
+  </div>
+  <div class="menu">
+    <p>kwnjfnje</p>
+  </div>
+
+
+</div>

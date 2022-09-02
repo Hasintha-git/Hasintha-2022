@@ -1,0 +1,186 @@
+.home-body {
+   width: 100%;
+   height: 100vh;
+   background-color: #0A192F;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   .worked-body {
+     width: 70%;
+     //background-color: blue;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     //align-items: center;
+     .flex_1 {
+       //flex: 1;
+       z-index: 99;
+       width: 100%;
+       height: 100px;
+       flex-direction: row;
+       display: flex;
+       //justify-content: center;
+       align-items: center;
+
+       //background-color: red;
+
+       .txt_01 {
+         font-size: 26px;
+         color: white;
+         font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+
+       }
+       .txt_header {
+         margin-left: 5px;
+         color: #CCD6F6;
+         font-size: 26px;
+         font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+         font-weight: bold;
+       }
+       .ruler {
+         width: 200px;
+         margin-left: 20px;
+         height: 1px;
+         background-color: gray;
+       }
+     }
+     .flex_2 {
+       z-index: 99;
+       width: 100%;
+       height: 100%;
+       flex-direction: row;
+       display: flex;
+       //justify-content: center;
+       align-items: center;
+       //background-color: gray;
+       justify-content: center;
+
+       .flex_2_body {
+         width: 60%;
+         height: 80%;
+         //background-color: green;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         .side_1 {
+           width: 25%;
+           //background-color: yellow;
+           height: 100%;
+           .btn_worked {
+             width: 100%;
+             height: 37px;
+             background-color: #0A192F;
+             border-left: 2px solid gray;
+             border-right: none;
+             border-bottom: none;
+             border-top: none;
+             //border: none;
+             color: gray;
+             font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+             font-size: 18px;
+             &:hover {
+               color: white;
+             }
+           }
+         }
+         .side_2 {
+           width: 80%;
+           //background-color: mediumpurple;
+           height: 100%;
+           padding-top: 10px;
+           .box_position {
+             width: 100%;
+             height: 8%;
+             overflow: hidden;
+             //background-color: greenyellow;
+             .txt_position {
+               color: whitesmoke;
+               font-size: 22px;
+               font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+
+             }
+
+           }
+           .box_duration {
+             width: 100%;
+             height: 10%;
+             //background-color: red;
+              .txt_duration {
+                color: gray;
+                font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+
+              }
+           }
+           .box_body {
+             width: 100%;
+             height: 70%;
+             //background-color: green;
+              .txt_pdetails {
+                color: gray;
+                font-size: 14px;
+                font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+
+              }
+           }
+         }
+       }
+     }
+   }
+ }
+
+
+//small lap>>>
+@media only screen and (max-width: 1023px) {
+
+}
+
+//tablet>>>
+@media only screen and (max-width: 806px) {
+
+  .flex_2_body{
+    width: 100% !important;
+    flex-direction: column!important;
+  }
+  .side_1 {
+    flex-direction: row!important;
+    display: flex!important;
+    width: 100%!important;
+    height: auto!important;
+    .btn_worked {
+      width: 100px!important;
+    }
+  }
+
+  .txt_position {
+    font-size: 16px!important;
+  }
+
+
+}
+
+//mobile >>
+@media only screen and (max-width: 650px) {
+
+  .home-body {
+    height: auto !important;
+
+  }
+
+  .ruler {
+    display: none!important;
+  }
+
+}
+
+
+//small mobile >>
+@media only screen and (max-width: 348px) {
+  .home-body {
+    height: auto !important;
+  }
+
+}

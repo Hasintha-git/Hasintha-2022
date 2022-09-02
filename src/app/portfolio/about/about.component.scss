@@ -1,0 +1,210 @@
+.home-body {
+  width: 100%;
+  height: 100vh;
+  background-color: #0A192F;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .about-body {
+    width: 70%;
+    //background-color: blue;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    .side_1 {
+      //flex: 1.5;
+      //background-color: red;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      display: flex;
+      .flex_1 {
+        //flex: 1;
+        z-index: 99;
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        display: flex;
+        //justify-content: center;
+        align-items: center;
+
+        .txt_01 {
+          font-size: 26px;
+          color: white;
+          font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+
+        }
+        .txt_header {
+          margin-left: 5px;
+          color: #CCD6F6;
+          font-size: 26px;
+          font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+          font-weight: bold;
+        }
+        .ruler {
+          width: 200px;
+          margin-left: 20px;
+          height: 1px;
+          background-color: gray;
+        }
+      }
+      .flex_2 {
+        //flex: 0;
+        //background-color: orange;
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        .div_description {
+          height: 100%;
+          width: 100%;
+          //background-color: blue;
+          .txt_des {
+            font-size: 16px;
+            color: #717C99;
+            line-height: 30px;
+          }
+        }
+        .div_language {
+          height: 30%;
+          width: 100%;
+          //background-color: gray;
+          display: flex;
+          flex-direction: column;
+          .txt_language {
+            font-size: 16px;
+            color: #717C99;
+          }
+          .language {
+            width: 100%;
+            height: 100%;
+            //background-color: yellow;
+            display: flex;
+            flex-direction: row;
+            .language_box {
+              //border: 1px solid red;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              color: #717C99;
+              .div_language {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                .img_arrow {
+                  width: 8px;
+                  height: 8px;
+                  margin-right: 10px;
+                  padding-top: 4px;
+                }
+
+              }
+            }
+          }
+        }
+      }
+    }
+    .side_2 {
+      //flex: 1;
+      //background-color: yellow;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .flex_img {
+        width: 90%;
+        height: 300px;
+        //background-color: #80cbc4;
+        display: flex;
+        z-index: 99;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        .img_hasintha {
+          width: 300px;
+          height: 300px;
+        }
+      }
+
+    }
+  }
+}
+
+.txt_hightlight {
+  color: #5FF1D0;
+}
+//small lap>>>
+@media only screen and (max-width: 1023px) {
+  .about-body {
+    flex-direction: column!important;
+  }
+  .ruler {
+    display: none;
+  }
+  .home-body {
+    height: auto!important;
+  }
+
+  .about-body {
+    //height: 130vh!important;
+    //background-color: #5CEACB;
+  }
+  .side_2 {
+    margin-top: 20px;
+    .flex_img {
+      width: 200px!important;
+      height: 200px!important;
+      //background-color: #80cbc4;
+    }
+  }
+}
+
+//tablet>>>
+@media only screen and (max-width: 806px) {
+  .home-body {
+    //height: auto !important;
+    padding-bottom: 50px;
+
+  }
+
+
+
+}
+
+//mobile >>
+@media only screen and (max-width: 650px) {
+
+  .home-body {
+    height: auto !important;
+
+  }
+
+
+}
+
+
+//small mobile >>
+@media only screen and (max-width: 348px) {
+  .home-body {
+    height: auto !important;
+  }
+  .language {
+
+    flex-direction: column!important;
+  }
+  .txt_des {
+    font-size: 14px!important;
+  }
+  .txt_language {
+    font-size: 14px!important;
+  }
+  .txt_lan {
+    font-size: 14px!important;
+  }
+
+}
