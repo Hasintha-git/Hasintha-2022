@@ -17,6 +17,9 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { AboutComponent } from './portfolio/about/about.component';
 import { WorkedComponent } from './portfolio/worked/worked.component';
+import { EpicComponent } from './portfolio/worked/epic/epic.component';
+import { BuiltComponent } from './portfolio/built/built.component';
+import { ProjectsComponent } from './portfolio/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { WorkedComponent } from './portfolio/worked/worked.component';
     SidemenuComponent,
     AboutComponent,
     WorkedComponent,
+    EpicComponent,
+    BuiltComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,

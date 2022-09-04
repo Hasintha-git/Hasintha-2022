@@ -1,0 +1,545 @@
+.home-body {
+  width: 100%;
+  height: 100vh;
+  background-color: #0A192F;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .shop24-body {
+    width: 70%;
+    //background-color: blue;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    .side_1 {
+      //flex: 1.5;
+      //background-color: red;
+      width: 55%;
+      height: 100%;
+      flex-direction: column;
+      display: flex;
+      .flex_1 {
+        //flex: 1;
+        z-index: 99;
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        display: flex;
+        //justify-content: center;
+        align-items: center;
+
+        .txt_01 {
+          font-size: 26px;
+          color: white;
+          font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+
+        }
+        .txt_header {
+          margin-left: 5px;
+          color: #CCD6F6;
+          font-size: 26px;
+          font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+          font-weight: bold;
+        }
+        .ruler {
+          width: 100px;
+          margin-left: 20px;
+          height: 1px;
+          background-color: gray;
+        }
+      }
+      .flex_2 {
+        //flex: 0;
+        //background-color: orange;
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        .div_cover {
+          height: 80%;
+          width: 100%;
+          //background-color: blue;
+          //background-image: url("../../../assets/images/covers/demo.png");
+          .img_cov {
+            //background-size: contain;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            //filter: blur(3px);
+            //filter: brightness(0.50);
+            //filter: grayscale(100%);
+            filter: opacity(50%);
+            &:hover {
+              filter: opacity(100%);
+            }
+          }
+          .txt_des {
+            font-size: 16px;
+            color: #717C99;
+            line-height: 30px;
+          }
+        }
+        .div_language {
+          height: 30%;
+          width: 100%;
+          //background-color: gray;
+          display: flex;
+          flex-direction: column;
+          .txt_language {
+            font-size: 16px;
+            color: #717C99;
+          }
+          .language {
+            width: 100%;
+            height: 100%;
+            //background-color: yellow;
+            display: flex;
+            flex-direction: row;
+            .language_box {
+              //border: 1px solid red;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              color: #717C99;
+              .div_language {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                .img_arrow {
+                  width: 8px;
+                  height: 8px;
+                  margin-right: 10px;
+                  padding-top: 4px;
+                }
+
+              }
+            }
+          }
+        }
+      }
+    }
+    .side_2 {
+      //flex: 1;
+      //background-color: yellow;
+      width: 45%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .side_2_box {
+        width: 100%;
+        height: 50%;
+        //background-color: #80cbc4;
+        display: flex;
+        z-index: 99;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        overflow: hidden;
+        flex-direction: column;
+        text-align: right;
+        color: black;
+        padding: 10px;
+        .txt_project_featured {
+          color: white;
+          font-size: 16px;
+          font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+
+        }
+        .txt_project_Name {
+          color: #CCD6F6;
+          font-size: 26px;
+          font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+          font-weight: bold;
+        }
+        .style_box {
+          width: 100%;
+          height: 150px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: right;
+          color: #7D88A5;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          .pro_description {
+            padding-right: 20px;
+            font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+
+          }
+        }
+        //.img_hasintha {
+        //  width: 300px;
+        //  height: 300px;
+        //}
+        .technology {
+          height: 40px;
+          width: 80%;
+          //background: #000;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding-top: 10px;
+          .txt_tech {
+            color: #7D88A5;
+            font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+            font-size: 12px;
+          }
+        }
+        .btn_section {
+          height: 30px;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          .img_link {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+
+    }
+  }
+  .youtube-body {
+    width: 70%;
+    //background-color: blue;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    .side_1 {
+      //flex: 1.5;
+      //background-color: red;
+      width: 55%;
+      height: 100%;
+      flex-direction: column;
+      display: flex;
+      .flex_1 {
+        //flex: 1;
+        z-index: 99;
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        display: flex;
+        //justify-content: center;
+        align-items: center;
+
+        .txt_01 {
+          font-size: 26px;
+          color: white;
+          font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+
+        }
+        .txt_header {
+          margin-left: 5px;
+          color: #CCD6F6;
+          font-size: 26px;
+          font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+          font-weight: bold;
+        }
+        .ruler {
+          width: 100px;
+          margin-left: 20px;
+          height: 1px;
+          background-color: gray;
+        }
+      }
+      .flex_2 {
+        //flex: 0;
+        //background-color: orange;
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        .div_cover {
+          height: 80%;
+          width: 100%;
+          //background-color: blue;
+          //background-image: url("../../../assets/images/covers/demo.png");
+          .img_cov {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            //filter: blur(3px);
+            //filter: brightness(0.50);
+            //filter: grayscale(100%);
+            filter: opacity(50%);
+            &:hover {
+              filter: opacity(100%);
+            }
+          }
+          .txt_des {
+            font-size: 16px;
+            color: #717C99;
+            line-height: 30px;
+          }
+        }
+        .div_language {
+          height: 30%;
+          width: 100%;
+          //background-color: gray;
+          display: flex;
+          flex-direction: column;
+          .txt_language {
+            font-size: 16px;
+            color: #717C99;
+          }
+          .language {
+            width: 100%;
+            height: 100%;
+            //background-color: yellow;
+            display: flex;
+            flex-direction: row;
+            .language_box {
+              //border: 1px solid red;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              color: #717C99;
+              .div_language {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                .img_arrow {
+                  width: 8px;
+                  height: 8px;
+                  margin-right: 10px;
+                  padding-top: 4px;
+                }
+
+              }
+            }
+          }
+        }
+      }
+    }
+    .side_2 {
+      //flex: 1;
+      //background-color: yellow;
+      width: 45%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .side_2_box {
+        width: 100%;
+        height: 50%;
+        //background-color: #80cbc4;
+        display: flex;
+        z-index: 99;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        overflow: hidden;
+        flex-direction: column;
+        text-align: right;
+        color: black;
+        padding: 10px;
+        .txt_project_featured {
+          color: white;
+          font-size: 16px;
+          font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+
+        }
+        .txt_project_Name {
+          color: #CCD6F6;
+          font-size: 26px;
+          font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+          font-weight: bold;
+        }
+        .style_box {
+          width: 100%;
+          height: 150px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: left;
+          color: #7D88A5;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          .pro_description {
+            padding-right: 20px;
+            font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+
+          }
+        }
+        //.img_hasintha {
+        //  width: 300px;
+        //  height: 300px;
+        //}
+        .technology {
+          height: 40px;
+          width: 80%;
+          //background: #000;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding-top: 10px;
+          .txt_tech {
+            color: #7D88A5;
+            font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+            font-size: 12px;
+          }
+        }
+        .btn_section {
+          height: 30px;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          .img_link {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.txt_hightlight {
+  color: #5FF1D0;
+}
+//small lap>>>
+@media only screen and (max-width: 1023px) {
+  .shop24-body {
+    flex-direction: column!important;
+    width: 100% !important;
+    height: 100%!important;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+  }
+  .youtube-body {
+    flex-direction: column-reverse!important;
+    width: 100% !important;
+    height: 100%!important;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+  }
+  .flex_1 {
+    height: 150px!important;
+  }
+  .txt_01 {
+    font-size: 18px !important;
+  }
+  .txt_header {
+    font-size: 18px !important;
+  }
+  .ruler {
+    display: none;
+  }
+  .home-body {
+    height: auto!important;
+  }
+  .flex_2 {
+
+    height: 90%!important;
+
+  }
+  .side_1 {
+    //flex: 1.5;
+    //background-color: red;
+    width: 70%!important;
+  }
+
+  .side_2 {
+    margin-top: 20px;
+    width: 80% !important;
+    justify-content: center!important;
+    align-items: center!important;
+    .flex_img {
+      width: 200px!important;
+      height: 200px!important;
+      //background-color: #80cbc4;
+    }
+  }
+  .side_2_box {
+    //background-color: red;
+    width: 100%!important;
+    justify-content: center!important;
+    align-items: center!important;
+    .txt_project_featured {
+      font-size: 16px;
+    }
+    .txt_project_Name {
+      font-size: 26px;
+    }
+    .style_box {
+      width: 100%;
+      height: 150px;
+      .pro_description {
+        padding-right: 20px;
+
+      }
+    }
+    .technology {
+      height: 40px;
+      width: 80%;
+
+      .txt_tech {
+        font-size: 12px;
+      }
+    }
+    .btn_section {
+      height: 30px;
+      width: 100%;
+      justify-content: center!important;
+
+      .img_link {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+//tablet>>>
+@media only screen and (max-width: 806px) {
+  .home-body {
+    //height: auto !important;
+    padding-bottom: 50px;
+
+  }
+
+
+
+}
+
+//mobile >>
+@media only screen and (max-width: 650px) {
+
+  .home-body {
+    height: auto !important;
+
+  }
+
+
+}
+
+
+//small mobile >>
+@media only screen and (max-width: 348px) {
+  .home-body {
+    height: auto !important;
+  }
+  .language {
+
+    flex-direction: column!important;
+  }
+  .txt_des {
+    font-size: 14px!important;
+  }
+  .txt_language {
+    font-size: 14px!important;
+  }
+  .txt_lan {
+    font-size: 14px!important;
+  }
+
+}
