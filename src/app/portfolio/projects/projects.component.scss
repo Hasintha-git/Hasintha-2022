@@ -10,6 +10,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     .flex_1 {
       z-index: 99;
       width: 100%;
@@ -201,6 +202,17 @@
           }
         }
       }
+    }
+
+    .btn_show_more {
+      width: 150px;
+      height: 44px;
+      background-color: transparent;
+      border: 1px solid #64FFDA;
+      color: #64FFDA;
+      border-radius: 5px;
+      margin-top: 50px;
+      font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     }
 
   }

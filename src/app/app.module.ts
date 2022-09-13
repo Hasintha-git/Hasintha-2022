@@ -1,25 +1,26 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { BlogComponent } from './blog/blog.component';
-import { WorkComponent } from './work/work.component';
-import { HeaderComponent } from './template/header/header.component';
-import { FooterComponent } from './template/footer/footer.component';
-import { HomePageComponent } from './portfolio/home-page/home-page.component';
-import { NgxCursorModule } from 'ngx-cursor';
-import { SidemenuComponent } from './template/sidemenu/sidemenu.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {PortfolioComponent} from './portfolio/portfolio.component';
+import {BlogComponent} from './blog/blog.component';
+import {WorkComponent} from './work/work.component';
+import {HeaderComponent} from './template/header/header.component';
+import {FooterComponent} from './template/footer/footer.component';
+import {HomePageComponent} from './portfolio/home-page/home-page.component';
+import {NgxCursorModule} from 'ngx-cursor';
+import {SidemenuComponent} from './template/sidemenu/sidemenu.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { AboutComponent } from './portfolio/about/about.component';
-import { WorkedComponent } from './portfolio/worked/worked.component';
-import { EpicComponent } from './portfolio/worked/epic/epic.component';
-import { BuiltComponent } from './portfolio/built/built.component';
-import { ProjectsComponent } from './portfolio/projects/projects.component';
+import {AboutComponent} from './portfolio/about/about.component';
+import {WorkedComponent} from './portfolio/worked/worked.component';
+import {EpicComponent} from './portfolio/worked/epic/epic.component';
+import {BuiltComponent} from './portfolio/built/built.component';
+import {ProjectsComponent} from './portfolio/projects/projects.component';
+import {TouchComponent} from './portfolio/touch/touch.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { ProjectsComponent } from './portfolio/projects/projects.component';
     EpicComponent,
     BuiltComponent,
     ProjectsComponent,
+    TouchComponent,
   ],
   imports: [
     BrowserModule,
