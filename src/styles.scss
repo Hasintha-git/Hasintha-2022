@@ -6,3 +6,36 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+::-webkit-scrollbar {
+  width: 0.50em;
+
+}
+
+::-webkit-scrollbar-track {
+  background: #0A192F;
+
+  //border-radius: 100vw;
+
+}
+::-webkit-scrollbar-thumb {
+  background-color: #788f9c;
+  //background: radial-gradient(circle at 10% 20%, #002853 0%, #040C18 90.2%);
+  border-radius: 20px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  //background-color: #788f9c;
+  background: #002853;
+
+
+
+}
+@supports(scrollbar-color: red blue){
+  * {
+    scrollbar-color: red blue;
+    scrollbar-width: 1em;
+  }
+}

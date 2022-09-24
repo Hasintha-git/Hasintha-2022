@@ -1,0 +1,15 @@
+.home-body {
+  width: 100%;
+  height: auto;
+  background-color: #0A192F;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card_body {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

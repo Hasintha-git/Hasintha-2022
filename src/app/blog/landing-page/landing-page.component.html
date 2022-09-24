@@ -1,0 +1,12 @@
+<div class="home-body">
+  <div class="home-cover">
+    <img src="{{img_src}}" class="cover_img">
+    <div class="img_txt_box">
+      <div class="txt_box">
+        <p class="txt_header">Latest Article</p>
+        <p class="txt_title">{{txt_title}} </p>
+        <button class="btn_more" [routerLink]="['/article', txt_title]">Read Post</button>
+      </div>
+    </div>
+  </div>
+</div>

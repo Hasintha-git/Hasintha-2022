@@ -6,8 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-
-  constructor() { }
+  name: string;
+  profession: string;
+  description: string;
+  constructor() {
+    this.name ="Hasintha Diyaneth.";
+    this.profession = "I build things for the web.";
+    this.description = "I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at";
+  }
 
   ngOnInit(): void {
   }

@@ -67,13 +67,6 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            //filter: blur(3px);
-            //filter: brightness(0.50);
-            //filter: grayscale(100%);
-            filter: opacity(50%);
-            &:hover {
-              filter: opacity(100%);
-            }
           }
           .txt_des {
             font-size: 16px;
@@ -263,13 +256,7 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            //filter: blur(3px);
-            //filter: brightness(0.50);
-            //filter: grayscale(100%);
-            filter: opacity(50%);
-            &:hover {
-              filter: opacity(100%);
-            }
+
           }
           .txt_des {
             font-size: 16px;

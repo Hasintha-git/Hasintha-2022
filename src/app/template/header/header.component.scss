@@ -66,6 +66,7 @@
   justify-content: space-between;
   align-items: center;
   padding-right: 20px;
+  background-color: transparent;
   .btn-menu {
     width: 48px;
     height: 48px;
@@ -73,11 +74,15 @@
     justify-content: center;
     align-items: center;
     border: none;
+    background-color: transparent;
+
   }
   .img-menu {
     display: flex;
     width: 48px;
     height: 48px;
+    background-color: transparent;
+
   }
 }
 
@@ -113,19 +118,19 @@
 
 .example-sidenav {
   //padding: 20px;
-  z-index: 99;
-  position: absolute;
+  z-index: 999;
+  position: fixed;
   width: 100%!important;
-  height: 100%!important;
+  height: 100vh!important;
+  //overflow: hidden;
   bottom: 0;
-  //background-color: blue;
   text-align: center;
   transition-duration: 0.5s;
 
   .example-sidenav-box {
     width: 100%!important;
     height: 100vh!important;
-
+    overflow: hidden;
       background: -moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
 
       /* safari 5.1+,chrome 10+ */
@@ -169,7 +174,7 @@
 
     .btn-close-menu{
       margin-top: 50px;
-      width: 70px;
+      width: 50px;
       &:hover {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius: 50%;
