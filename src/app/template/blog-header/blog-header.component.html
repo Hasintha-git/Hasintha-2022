@@ -23,9 +23,20 @@
       <div class="box_2">
         <img src="../../../assets/images/icons/social/icons8-search.svg" alt="" class="search_icon">
       </div>
-      <button type="button" class="btn btn-menu" >
+      <button type="button" class="btn btn-menu" [matMenuTriggerFor]="menu">
         <img src="../../../assets/images/icons/menu.svg" class="img-menu" >
       </button>
     </div>
   </div>
 </div>
+<mat-menu #menu="matMenu">
+  <div id="myPanelId" class="menu-panel">
+    <button class="btn_menu" mat-menu-item>Login</button>
+    <button class="btn_menu" mat-menu-item>Category</button>
+    <button class="btn_menu" mat-menu-item>Authors</button>
+    <button class="btn_menu" mat-menu-item>Bookmark</button>
+    <div class="menu_footer">
+      <p class="footer_txt">Copyright. 2022 Wizlab Solution. All Right Reserved</p>
+    </div>
+  </div>
+</mat-menu>

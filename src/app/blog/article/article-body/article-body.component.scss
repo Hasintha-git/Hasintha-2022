@@ -10,29 +10,30 @@
 
   //main header css>>>>
   .article_header {
-    width: 90%;
-    height: 70vh;
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     .div_body {
       width: 100%;
-      height: 90%;
+      height: 100%;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       .div_1 {
-        width: 40%;
-        height: 100%;
+        width: 100%;
+        height: 40%;
         overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         flex-direction: column;
         .main_details {
           width: 90%;
-          height: 90%;
+          height: 50%;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -49,9 +50,8 @@
 
             }
             .txt_title {
-              font-weight: 500;
-
-              font-size: 22px;
+              font-weight: bold;
+              font-size: 44px;
               color: white;
               line-height: 30px;
               font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
@@ -106,15 +106,15 @@
         }
       }
       .div_2 {
-        width: 60%;
+        width: 100%;
         height: 100%;
         overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
         .img_main {
-          width: 90%;
-          height: 90%;
+          width: 100%;
+          height: 100%;
           background-size: cover;
         }
       }
@@ -124,7 +124,7 @@
 
   //social bar css >>>
   .main_bar {
-    width: 85%;
+    width: 100%;
     height: 10vh;
     //border: 1px solid red;
     display: flex;
@@ -142,7 +142,7 @@
       flex-direction: row;
 
       .social-media {
-        width: 15%;
+        width: 20%;
         height: 70%;
         display: flex;
         justify-content: space-evenly;
@@ -227,6 +227,9 @@
     }
   }
 
+  .txt_title {
+    font-size: 30px !important;
+  }
 }
 
 @media only screen and (max-width: 570px) {
@@ -237,7 +240,10 @@
       flex-direction: column !important;
       .div_1 {
         width: 100% !important;
-        height: 70% !important;
+        height: 50% !important;
+        .main_details {
+          width: 96% !important;
+        }
       }
       .div_2 {
         width: 100% !important;
@@ -256,4 +262,7 @@
     }
   }
 
+  .txt_title {
+    font-size: 24px !important;
+  }
 }
