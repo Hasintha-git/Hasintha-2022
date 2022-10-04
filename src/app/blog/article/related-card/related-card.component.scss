@@ -48,3 +48,9 @@
   font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
 
 }
+
+@media only screen and (max-width: 920px) {
+  .card_style {
+    width: 18rem!important;
+  }
+}

@@ -34,6 +34,8 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import {RelatedArticleComponent} from './blog/article/related-article/related-article.component';
 import {RelatedCardComponent} from './blog/article/related-card/related-card.component';
 import {MatMenuModule} from "@angular/material/menu";
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -73,6 +75,8 @@ import {MatMenuModule} from "@angular/material/menu";
     MatSidenavModule,
     MatPaginatorModule,
     MatMenuModule,
+    MatGridListModule,
+    MatCardModule,
 
   ],
   providers: [],

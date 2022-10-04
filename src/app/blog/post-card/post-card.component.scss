@@ -1,7 +1,7 @@
 .home-body {
   width: 100%;
   height: auto;
-  background-color: #111111;
+  //background-color: #111111;
   padding-top: 20px;
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@
     align-items: center;
    .card_style {
      width: 22rem;
-     background-color: #111111;
+     //background-color: #111111;
      padding: 5px;
      &:hover {
        //border: 1px solid #111111;
@@ -82,11 +82,186 @@
 
 .pagination > li {
   padding: 5px;
-  background-color: #111111;
+  //background-color: #111111;
 }
 
 .mat-paginator {
-  background-color: #111111;
+  //background-color: #111111;
   color: white;
 }
+
+.main_dev {
+  width: 80%;
+  height: auto;
+  //background-color: #111111;
+  padding-top: 20px;
+
+}
+
+.content_body {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #E7EBED;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+
+  &:hover {
+    //background-color: #141414;
+    cursor: pointer;
+    .tags_body {
+      //background-color: #111111;
+    }
+  }
+
+}
+
+.card_header {
+  width: 90%;
+  height: 35px;
+  //border: 1px solid red;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  border-left: 1px solid #CCE2EA;
+  .profile {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: #CCE2EA;
+    margin-left: 20px;
+    overflow: hidden;
+    .profile_main {
+      width: 100%;
+      height: 100%;
+
+    }
+  }
+
+  .details {
+    width: auto;
+    height: 100%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    line-height: 100%;
+    padding: 0;
+    color: gray;
+    font-family: 'museo-sans', sans-serif;
+    .details_name {
+      font-weight: 500;
+      color: #CCE2EA;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-family: 'museo-sans', sans-serif;
+
+    }
+    .details_date {
+      margin-left: 5px;
+
+      font-weight: 500;
+      color: #CCE2EA;
+      font-family: 'museo-sans', sans-serif;
+    }
+  }
+}
+
+.card_title {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  .txt_card_title {
+    color: #CCE2EA;
+    font-size: 24px;
+    font-family: 'museo-sans', sans-serif;
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 1.05;
+  }
+}
+
+.card_tags {
+  width: 90%;
+  height: auto;
+  //border: 1px solid red;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  .tags_body {
+    width: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right:  5px;
+    height: 20px;
+    //background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    border-radius: 2px;
+    font-family: 'museo-sans', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+.card_description {
+  width: 90%;
+  height: 60px;
+  //border: 1px solid red;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  .txt_description {
+    color: #CCE2EA;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'pt-serif', Georgia, serif;
+  }
+}
+
+.card_button {
+  width: 90%;
+  height: 40px;
+  //border: 1px solid red;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  .btn_read {
+    width: 180px;
+    height: 37px;
+    border-radius: 100px;
+    border: 1px solid #CCE2EA;
+    background-color: transparent;
+    color: white;
+    font-family: 'museo-sans', sans-serif;
+    letter-spacing: normal;
+    font-weight: 600;
+    white-space: normal;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: #CCE2EA;
+      color: black;
+    }
+  }
+}
+
 

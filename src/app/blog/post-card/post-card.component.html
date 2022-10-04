@@ -1,45 +1,74 @@
+<link rel="stylesheet" href="post-card.component.scss">
 <div class="home-body">
-<div class="container text-center">
-  <div class="row" >
-    <div class="col card_body" *ngFor="let post of pageSlice" >
+<!--<div class="container text-center">-->
+  <!--<div class="row" >-->
+    <!--<div class="col card_body" *ngFor="let post of pageSlice" >-->
 
-      <div class="card card_style" [routerLink]="['/article', txt_title]">
-        <div class="img_box" >
-          <img src="{{img_url}}" class="card-img-top" alt="">
+      <!--<div class="card card_style" [routerLink]="['/article', txt_title]">-->
+        <!--<div class="img_box" >-->
+          <!--<img src="{{img_url}}" class="card-img-top" alt="">-->
+
+        <!--</div>-->
+        <!--<div class="card_des">-->
+          <!--<h5 class="card-title">{{txt_title}} </h5>-->
+          <!--<p class="card-text">{{txt_des}}</p>-->
+          <!--<p class="card-text">{{date}}</p>-->
+        <!--</div>-->
+
+      <!--</div>-->
+    <!--</div>-->
+
+  <!--</div>-->
+<!--</div>-->
+  <div class="main_dev">
+    <mat-grid-list cols="{{breakpoint}}" rowHeight="170px" gutterSize="5px" (window:resize)="onResize($event)">
+      <mat-grid-tile *ngFor="let tile of tiles"
+                     [colspan]="tile.cols"
+                     [rowspan]="tile.rows">
+        <!--<mat-grid-tile-header>-->
+          <!--<h3>{{tile.text}}</h3>-->
+        <!--</mat-grid-tile-header>-->
+        <div class="content_body" [routerLink]="['/article', txt_title]">
+          <div class="card_header">
+            <div class="profile">
+              <img src="{{img_profile}}" class="profile_main">
+            </div>
+            <div class="details">
+              <em>by</em><span class="details_name">Brain Clark</span> <span> <em>on</em> <span class="details_date">March 6, 2022</span></span>
+            </div>
+
+          </div>
+          <div class="card_title">
+            <p class="txt_card_title">And the Oscar Went to…</p>
+
+          </div>
+
+          <div class="card_tags">
+            <div class="tags_body">Copywriting</div>
+            <div class="tags_body">social media marketing</div>
+
+          </div>
+
+          <div class="card_description" *ngIf="tile.text === 1 || tile.text === 8 ">
+            <p class="txt_description">The 78th annual film industry publicity stunt Oscars are now in the bag, ably hosted by Jon Stewart, with a…</p>
+          </div>
+          <div class="card_button" *ngIf="tile.text === 1 || tile.text === 8 ">
+            <button class="btn_read">Continue Reading</button>
+
+          </div>
 
         </div>
-        <div class="card_des">
-          <h5 class="card-title">{{txt_title}} </h5>
-          <p class="card-text">{{txt_des}}</p>
-          <p class="card-text">{{date}}</p>
-        </div>
 
-      </div>
-    </div>
-
+        <!--<mat-grid-tile-footer>-->
+          <!--<h3>{{tile.text}} </h3>-->
+        <!--</mat-grid-tile-footer>-->
+      </mat-grid-tile>
+    </mat-grid-list>
   </div>
-</div>
-  <!--<nav aria-label="Page navigation example">-->
-  <!--<ul class="pagination">-->
-  <!--<li class="page-item">-->
-  <!--<a class="page-link" href="#" aria-label="Previous">-->
-  <!--<span aria-hidden="true">&laquo;</span>-->
-  <!--</a>-->
-  <!--</li>-->
-  <!--<li class="page-item"><a class="page-link" href="#">1</a></li>-->
-  <!--<li class="page-item"><a class="page-link" href="#">2</a></li>-->
-  <!--<li class="page-item"><a class="page-link" href="#">3</a></li>-->
-  <!--<li class="page-item">-->
-  <!--<a class="page-link" href="#" aria-label="Next">-->
-  <!--<span aria-hidden="true">&raquo;</span>-->
-  <!--</a>-->
-  <!--</li>-->
-  <!--</ul>-->
-  <!--</nav>-->
-
   <mat-paginator [length]=pageSlice.length
                  [pageSize]=pageSize
                  [pageSizeOptions]="[10]"
                  (click)="loadPostsBypagination()">
   </mat-paginator>
+
 </div>
