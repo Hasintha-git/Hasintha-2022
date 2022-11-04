@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-built',
@@ -10,6 +11,10 @@ export class BuiltComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
   }
 
+  openUrl(url:any) {
+    window.open(url)
+  }
 }

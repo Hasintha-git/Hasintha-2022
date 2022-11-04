@@ -28,14 +28,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 ::-webkit-scrollbar-thumb:hover {
   //background-color: #788f9c;
-  background: #002853;
+  background: white;
 
 
 
 }
-@supports(scrollbar-color: red blue){
+@supports(scrollbar-color: white){
   * {
-    scrollbar-color: red blue;
+    scrollbar-color: white;
     scrollbar-width: 1em;
   }
 }

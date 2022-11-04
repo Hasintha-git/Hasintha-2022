@@ -35,6 +35,10 @@ import {RelatedArticleComponent} from './blog/article/related-article/related-ar
 import {RelatedCardComponent} from './blog/article/related-card/related-card.component';
 import {MatMenuModule} from "@angular/material/menu";
 
+import {MatDialogModule} from '@angular/material/dialog';
+import { FeedbackComponent } from './portfolio/touch/feedback/feedback.component';
+import { LoaderComponent } from './template/loader/loader.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,6 +66,8 @@ import {MatMenuModule} from "@angular/material/menu";
     ArticleFooterComponent,
     RelatedArticleComponent,
     RelatedCardComponent,
+    FeedbackComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,6 +79,7 @@ import {MatMenuModule} from "@angular/material/menu";
     MatSidenavModule,
     MatPaginatorModule,
     MatMenuModule,
+    MatDialogModule
 
   ],
   providers: [],

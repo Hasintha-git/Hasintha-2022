@@ -60,6 +60,7 @@
         .div_cover {
           height: 80%;
           width: 100%;
+          cursor: pointer;
           //background-color: blue;
           //background-image: url("../../../assets/images/covers/demo.png");
           .img_cov {
@@ -67,6 +68,9 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
+            &:hover {
+              cursor: pointer;
+            }
           }
           .txt_des {
             font-size: 16px;
@@ -159,6 +163,7 @@
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           .pro_description {
             padding-right: 20px;
+            padding-left: 20px;
             font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
 
           }
@@ -187,6 +192,9 @@
           display: flex;
           flex-direction: row;
           justify-content: flex-end;
+          &:hover {
+            cursor: pointer;
+          }
           .img_link {
             width: 30px;
             height: 30px;
@@ -252,6 +260,9 @@
           width: 100%;
           //background-color: blue;
           //background-image: url("../../../assets/images/covers/demo.png");
+          &:hover {
+            cursor: pointer;
+          }
           .img_cov {
             width: 100%;
             height: 100%;
@@ -337,6 +348,9 @@
           font-size: 26px;
           font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
           font-weight: bold;
+          &:hover {
+            cursor: pointer;
+          }
         }
         .style_box {
           width: 100%;
@@ -349,6 +363,7 @@
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           .pro_description {
             padding-right: 20px;
+            padding-left: 20px;
             font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
 
           }
@@ -377,6 +392,9 @@
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
+          &:hover {
+            cursor: pointer;
+          }
           .img_link {
             width: 30px;
             height: 30px;
@@ -443,7 +461,6 @@
     .flex_img {
       width: 200px!important;
       height: 200px!important;
-      //background-color: #80cbc4;
     }
   }
   .side_2_box {
@@ -456,12 +473,16 @@
     }
     .txt_project_Name {
       font-size: 26px;
+      &:hover {
+        cursor: pointer;
+      }
     }
     .style_box {
       width: 100%;
       height: 150px;
       .pro_description {
         padding-right: 20px;
+        padding-left: 20px;
 
       }
     }
@@ -477,7 +498,9 @@
       height: 30px;
       width: 100%;
       justify-content: center!important;
-
+      &:hover {
+        cursor: pointer;
+      }
       .img_link {
         width: 30px;
         height: 30px;

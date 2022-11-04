@@ -18,4 +18,8 @@ export class HeaderComponent implements OnInit {
   loadSidemenu() {
     this.loadComponent = true;
   }
+
+  openResume() {
+    window.open('https://drive.google.com/file/d/1b-e_FcZCDT7XQtiHDYbDPEQJ_64QGyI8/view?usp=sharing')
+  }
 }

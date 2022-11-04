@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -11,5 +10,11 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  openLink(url:any) {
+    window.open(url)
+  }
 
+  openGithubRepo() {
+    window.open('https://github.com/Hasintha-git?tab=repositories')
+  }
 }

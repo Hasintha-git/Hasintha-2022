@@ -10,7 +10,7 @@
       <button type="button" mat-button class=" btn-route">
         03. Shopping
       </button>
-      <button type="button" mat-button class=" btn-resume">
+      <button type="button" mat-button class=" btn-resume" (click)="openResume()">
         Resume
       </button>
 
@@ -30,16 +30,25 @@
   </div>
 
   <div class="btn-section">
-    <button type="button" mat-button class="btn-route" routerLink="/portfolio">
+<!--    <button type="button" mat-button class="btn-route" routerLink="/portfolio">-->
+<!--      01. Home-->
+<!--    </button>-->
+<!--    <button type="button" mat-button class=" btn-route" routerLink="/blog">-->
+<!--      02. Blog-->
+<!--    </button>-->
+
+<!--    need remove >>>>-->
+    <button type="button" mat-button class="btn-route" >
       01. Home
     </button>
-    <button type="button" mat-button class=" btn-route" routerLink="/blog">
+    <button type="button" mat-button class=" btn-route" >
       02. Blog
     </button>
+<!--    <<<<<<<<<<<<<<<<<<<<-->
     <button type="button" mat-button class=" btn-route">
       03. Shopping
     </button>
-    <button type="button" mat-button class=" btn-resume">
+    <button type="button" mat-button class=" btn-resume"  (click)="openResume()">
       Resume
     </button>
 
