@@ -1,0 +1,21 @@
+[debug] [2022-11-07T03:51:20.435Z] ----------------------------------------------------------------------
+[debug] [2022-11-07T03:51:20.436Z] Command:       /home/hasintha/.nvm/versions/node/v16.15.0/bin/node /home/hasintha/.nvm/versions/node/v16.15.0/bin/firebase init
+[debug] [2022-11-07T03:51:20.437Z] CLI Version:   11.16.0
+[debug] [2022-11-07T03:51:20.437Z] Platform:      linux
+[debug] [2022-11-07T03:51:20.437Z] Node Version:  v16.15.0
+[debug] [2022-11-07T03:51:20.437Z] Time:          Mon Nov 07 2022 09:21:20 GMT+0530 (India Standard Time)
+[debug] [2022-11-07T03:51:20.438Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-07T03:51:20.445Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-07T03:51:20.445Z] > authorizing via signed-in user (diyanethhasintha@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/hasintha/Public/Projects/Hasintha-2022/src/app/template
+
