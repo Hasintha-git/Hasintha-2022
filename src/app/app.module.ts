@@ -34,10 +34,12 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import {RelatedArticleComponent} from './blog/article/related-article/related-article.component';
 import {RelatedCardComponent} from './blog/article/related-card/related-card.component';
 import {MatMenuModule} from "@angular/material/menu";
+import {AngularFireModule} from '@angular/fire/compat'
 
 import {MatDialogModule} from '@angular/material/dialog';
 import { FeedbackComponent } from './portfolio/touch/feedback/feedback.component';
 import { LoaderComponent } from './template/loader/loader.component';
+import {environment} from "../environments/environment";
 
 @NgModule({
   declarations: [
@@ -79,7 +81,8 @@ import { LoaderComponent } from './template/loader/loader.component';
     MatSidenavModule,
     MatPaginatorModule,
     MatMenuModule,
-    MatDialogModule
+    MatDialogModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
 
   ],
   providers: [],

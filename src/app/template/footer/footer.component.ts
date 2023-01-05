@@ -9,7 +9,7 @@ export class FooterComponent implements OnInit {
   public rates: number;
 
   constructor() {
-    this.rates = 4200
+    this.rates = 2022
   }
 
   ngOnInit(): void {
