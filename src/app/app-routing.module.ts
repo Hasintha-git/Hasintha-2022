@@ -7,8 +7,8 @@ import {ArticleComponent} from "./blog/article/article.component";
 import {LoaderComponent} from "./template/loader/loader.component";
 
 const routes: Routes = [
-  {path:'',redirectTo:'loading',pathMatch:'full'},
-  { path: 'loading', component: LoaderComponent },
+  {path:'',redirectTo:'portfolio',pathMatch:'full'},
+  // { path: 'loading', component: LoaderComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'menu', component: SidemenuComponent },
   { path: 'blog', component: BlogComponent },

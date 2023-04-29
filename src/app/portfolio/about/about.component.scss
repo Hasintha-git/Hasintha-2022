@@ -63,7 +63,7 @@
           //background-color: blue;
           .txt_des {
             font-size: 16px;
-            color: #717C99;
+            color: white;
             line-height: 30px;
           }
         }
@@ -124,103 +124,31 @@
         flex-wrap: wrap;
       }
 
-      @keyframes rainblow {
-        from {
-          filter: hue-rotate(0deg);
-        }
-        to {
-          filter: hue-rotate(359deg);
-        }
-      }
-      @-o-keyframes rainblow {
-        from {
-          filter: hue-rotate(0deg);
-        }
-        to {
-          filter: hue-rotate(359deg);
-        }
-      }
-      @-moz-keyframes rainblow {
-        from {
-          filter: hue-rotate(0deg);
-        }
-        to {
-          filter: hue-rotate(359deg);
-        }
-      }
-      @-webkit-keyframes rainblow {
-        from {
-          filter: hue-rotate(0deg);
-        }
-        to {
-          filter: hue-rotate(359deg);
-        }
-      }
-      @keyframes rainblow2 {
-        from {
-          filter: hue-rotate(0deg) blur(16px);
-        }
-        to {
-          filter: hue-rotate(359deg) blur(16px);
-        }
-      }
-      @-o-keyframes rainblow2 {
-        from {
-          filter: hue-rotate(0deg) blur(16px);
-        }
-        to {
-          filter: hue-rotate(359deg) blur(16px);
-        }
-      }
-      @-moz-keyframes rainblow2 {
-        from {
-          filter: hue-rotate(0deg) blur(16px);
-        }
-        to {
-          filter: hue-rotate(359deg) blur(16px);
-        }
-      }
-      @-webkit-keyframes rainblow2 {
-        from {
-          filter: hue-rotate(0deg) blur(16px);
-        }
-        to {
-          filter: hue-rotate(359deg) blur(16px);
-        }
-      }
+
       .circle {
         position: relative;
       }
       .circle::before, .circle::after {
-        animation: rainblow 5s linear infinite;
-        -webkit-animation: rainblow 5s linear infinite;
-        content: "";
-        position: absolute;
-        inset: 24px;
-        border-radius: 50%;
-        border: 7px solid #FD7E14;
-        cursor: pointer;
-        z-index: 0;
+
       }
       .circle::after {
-        animation: rainblow2 5s linear infinite;
-        -webkit-animation: rainblow2 5s linear infinite;
-        opacity: 0.4;
-        inset: 16px;
-        border: 0px solid #fed1ac;
+
+
       }
       .circle .inner {
-        width: 350px;
-        height: 350px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .img_hasintha {
         width: 300px;
         height: 300px;
-        border-radius: 100%;
-
+        border-radius: 10%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        border: 5px solid white;
+      }
+      .img_hasintha {
+        width: auto;;
+        height: auto;
       }
       .flex_img {
         display: flex;
@@ -239,9 +167,8 @@
         //align-items: center;
         //overflow: hidden;
         .img_hasintha {
-          width: 300px;
-          height: 300px;
-          border-radius: 100%;
+          width: auto;;
+          height: auto;
 
         }
       }
@@ -275,8 +202,8 @@
       width: 250px !important;
       height: 250px !important;
       .img_hasintha {
-        width: 200px!important;
-        height: 200px !important;
+        width: auto;;
+        height: auto;
       }
     }
     .flex_img {
