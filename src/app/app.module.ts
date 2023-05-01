@@ -40,7 +40,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { FeedbackComponent } from './portfolio/touch/feedback/feedback.component';
 import { LoaderComponent } from './template/loader/loader.component';
 import {environment} from "../environments/environment";
-
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -83,7 +83,7 @@ import {environment} from "../environments/environment";
     MatMenuModule,
     MatDialogModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
