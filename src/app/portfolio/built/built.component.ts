@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 import {slideAnimation} from '../built/side.animation';
 import {interval} from 'rxjs';
+import {trigger} from "@angular/animations";
 
 export interface Tile {
   color: string;
@@ -13,7 +14,12 @@ export interface Tile {
 @Component({
   selector: 'app-built',
   templateUrl: './built.component.html',
-  styleUrls: ['./built.component.scss']
+  styleUrls: ['./built.component.scss'],
+  animations: [
+    trigger('slideAnimation', [
+      // define animation here
+    ])
+  ]
 })
 
 export class BuiltComponent implements OnInit {
@@ -22,7 +28,7 @@ export class BuiltComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init();
-    this.preloadImages();
+    // this.preloadImages();
     const obs=interval(6000);
     obs.subscribe((d:any)=> {
       this.nextSlide()
@@ -36,18 +42,18 @@ export class BuiltComponent implements OnInit {
 
   currentIndex = 0;
   slides = [
-    {description: '“Wizlab Solutions always helps you to do the best like a friend rather than a boss.. If you want to do the best, you should definitely choose Wizlab Solutions.. Because you have choosed and joined with Wizlab,  they will definitely help you to grow bigger and consider as you are one of our own and give you our full support.. Thank you Wizlab Solutions For the support you are giving 💓”', name: 'Sadun Madushanka', profession: '24shop Owner', img: '../../../assets/images/feedback/sadun.jpg'},
+    {description: '“Always helps you to do the best like a friend rather than a boss.. If you want to do the best, you should definitely choose,  they will definitely help you to grow bigger and consider as you are one of our own and give you our full support.. Thank you Hasintha Diyaneth For the support you are giving 💓”', name: 'Sadun Madushanka', profession: '24shop Owner', img: '../../../assets/images/feedback/sadun.jpg'},
     {description: '“They provide a great software solutions for any kind of your requirement (campus ,job ect).professional service .highly reccomended.”', name: 'Tishan Chathura', profession: 'Software Engineer', img: '../../../assets/images/feedback/tishan.jpg'},
     // {description: '“kkk ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”', name: '02'},
   ];
 
 
 
-  preloadImages() {
-    this.slides.forEach(slide => {
-      (new Image()).src = slide.description;
-    });
-  }
+  // preloadImages() {
+  //   this.slides.forEach(slide => {
+  //     (new Image()).src = slide.description;
+  //   });
+  // }
 
   setCurrentSlideIndex(index: number) {
     this.currentIndex = index;

@@ -5,6 +5,7 @@ import {PortfolioComponent} from "./portfolio/portfolio.component";
 import {BlogComponent} from "./blog/blog.component";
 import {ArticleComponent} from "./blog/article/article.component";
 import {LoaderComponent} from "./template/loader/loader.component";
+import {NotFoundComponent} from "./not-found/not-found.component";
 
 const routes: Routes = [
   {path:'',redirectTo:'portfolio',pathMatch:'full'},
@@ -13,7 +14,7 @@ const routes: Routes = [
   { path: 'menu', component: SidemenuComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'article/:path', component: ArticleComponent },
-
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({

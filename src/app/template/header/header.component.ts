@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import * as FileSaver from 'file-saver';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -19,7 +19,9 @@ export class HeaderComponent implements OnInit {
     this.loadComponent = true;
   }
 
-  openResume() {
-    window.open('https://drive.google.com/file/d/1b-e_FcZCDT7XQtiHDYbDPEQJ_64QGyI8/view?usp=sharing')
+
+  downloadPDF() {
+    FileSaver.saveAs("../../../assets/doc/Hasintha_Diyaneth_Resume.pdf", 'Hasintha_Diyaneth_Resume.pdf');
   }
+
 }

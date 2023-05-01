@@ -41,6 +41,10 @@ import { FeedbackComponent } from './portfolio/touch/feedback/feedback.component
 import { LoaderComponent } from './template/loader/loader.component';
 import {environment} from "../environments/environment";
 import { MatIconModule } from '@angular/material/icon';
+import { HttpClient } from '@angular/common/http';
+import { NotFoundComponent } from './not-found/not-found.component';
+import {slideAnimation} from "./portfolio/built/side.animation";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -70,6 +74,7 @@ import { MatIconModule } from '@angular/material/icon';
     RelatedCardComponent,
     FeedbackComponent,
     LoaderComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -83,7 +88,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatMenuModule,
     MatDialogModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    MatIconModule
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

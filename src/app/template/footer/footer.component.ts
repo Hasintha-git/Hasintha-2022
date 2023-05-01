@@ -13,6 +13,20 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      window.addEventListener('scroll', this.myScrollHandler, { passive: true });
+
+    }, 1000); // reduce the delay time
+
+  }
+
+  emailSend() {
+
+  }
+
+  myScrollHandler(event: Event) {
+    console.log("hi")
+    // code to handle scroll event
   }
 
 }
