@@ -17,4 +17,8 @@ export class ProjectsComponent implements OnInit {
   openGithubRepo() {
     window.open('https://github.com/Hasintha-git?tab=repositories')
   }
+
+  openYoutubeChannel() {
+    window.open('https://www.youtube.com/@hasiyatech')
+  }
 }
