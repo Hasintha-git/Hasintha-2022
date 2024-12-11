@@ -11,8 +11,8 @@ export class HomePageComponent implements OnInit {
   description: string;
   constructor() {
     this.name ="Hasintha Diyaneth.";
-    this.profession = "Software Developer | YouTuber | Freelancer";
-    this.description = "I’m a software developer and Technology Knowledge sharing YouTube . I started wizlab solution for as Startup Software Company ";
+    this.profession = "Software Engineer | YouTuber | Freelancer";
+    this.description = "I’m a software engineer and Technology Knowledge sharing YouTube.";
   }
 
   ngOnInit(): void {
